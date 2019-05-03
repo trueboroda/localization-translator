@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LocalizationTranslator.BL\LocalizationTranslator.BL.csproj" />
+    <ProjectReference Include="..\LocalizationTranslator.BL\LocalizationTranslator.BL.csproj" />
     <ProjectReference Include="..\LocalizationTranslator.Core\LocalizationTranslator.Core.csproj" />
   </ItemGroup>
 

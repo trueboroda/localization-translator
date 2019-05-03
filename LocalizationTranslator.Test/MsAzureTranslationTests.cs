@@ -1,5 +1,4 @@
 using LocalizationTranslator.BL.Services;
-using LocalizationTranslator.Core.Model;
 using LocalizationTranslator.Core.Services;
 using Xunit;
 
@@ -7,25 +6,23 @@ namespace LocalizationTranslator.Test
 {
     public class MsAzureTranslationTests
     {
+        private const string SUBS_KEY = "396204b01c604a87b9a02d019044d4cf";
+
         [Fact]
         public void Translate_HellowWorld()
         {
-            ITranslator translator = new MsAzureTranslator();
 
-            var sourceText = "Hellow world";
+            ITranslator translator = new MsAzureTranslator(SUBS_KEY);
 
+            var sourceText = "Hello world";
+            var sourceLngCode = "en";
+            var targetLngCode = "ru";
 
-            var traslationObjext = new TranslationObject()
-            {
-                SourceLngCode = "en",
-                TargetLngCode = "ru",
-                Text = sourceText
+            var result = translator.TranslateString(sourceText, sourceLngCode, targetLngCode);
 
-            };
+            Assert.NotNull(result);
 
-            var result = translator.Translate(traslationObjext);
-
-            Assert.Equal("Привет мир".ToLower(), result.ToLower());
+            Assert.Equal("Всем привет".ToLower(), result.ToLower());
 
         }
     }
