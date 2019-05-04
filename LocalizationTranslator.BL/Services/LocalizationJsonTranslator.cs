@@ -17,20 +17,23 @@ namespace LocalizationTranslator.BL.Services
         {
             var result = (JObject)source.DeepClone();
 
-            foreach (var item in result.Children<JProperty>())
-            {
-                TranslateNode(item, from, to);
-            }
+            //foreach (var item in result.Children<JProperty>())
+            //{
+            //    TranslateNode(item, from, to);
+            //}
+
+            TranslateNode(result, from, to);
 
             return result;
         }
 
 
-        private void TranslateNode(JProperty node, string from, string to)
+        private void TranslateNode(JToken node, string from, string to)
         {
-            if (node.Type == JTokenType.Object)
+
+            if (node.Type == JTokenType.Object || node.Type == JTokenType.Property)
             {
-                foreach (var item in node.Children<JProperty>())
+                foreach (var item in node.Children<JToken>())
                 {
                     TranslateNode(item, from, to);
                 }
@@ -39,7 +42,14 @@ namespace LocalizationTranslator.BL.Services
             {
                 var sourceValue = node.Value<string>();
                 var resultValue = _translator.TranslateString(sourceValue, from, to);
-                node.Value = resultValue;
+
+                var property = (JProperty)node.Parent;
+
+                property.Value = resultValue;
+
+
+
+
             }
 
         }
