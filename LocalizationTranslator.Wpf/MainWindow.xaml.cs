@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows;
 using LocalizationTranslator.BL.Services;
 using LocalizationTranslator.Core.Services;
@@ -27,12 +28,24 @@ namespace LocalizationTranslator.Wpf
         private JObject source;
         private JObject result;
 
+
+        public bool IsNotProcessing
+        {
+            get { return (bool)GetValue(IsNotProcessingProperty); }
+            set { SetValue(IsNotProcessingProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IsNotProcessing.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IsNotProcessingProperty =
+            DependencyProperty.Register("IsNotProcessing", typeof(bool), typeof(MainWindow), new PropertyMetadata(true));
+
+
+
+
         public MainWindow()
         {
 
             InitializeComponent();
-
-
 
 
             dialogService = new DefaultDialogService();
@@ -71,14 +84,32 @@ namespace LocalizationTranslator.Wpf
 
             try
             {
-                result = translator.Translate(source, "en", "ru");
 
-                btnDownload.IsEnabled = true;
+                IsNotProcessing = false;
+
+                tbResult.Text = "Translation on progress";
+
+                Task.Run(() =>
+                {
+                    result = translator.Translate(source, "en", "ru");
+
+                }).GetAwaiter()
+                .OnCompleted(() =>
+                {
+                    btnDownload.IsEnabled = true;
+                    IsNotProcessing = true;
+                    tbResult.Text = result.ToString(Newtonsoft.Json.Formatting.Indented);
+                });
+
+
             }
             catch (Exception ex)
             {
                 dialogService.ShowMessage(ex.Message);
+
+                IsNotProcessing = true;
                 btnDownload.IsEnabled = false;
+                tbResult.Text = "Failure";
             }
         }
 

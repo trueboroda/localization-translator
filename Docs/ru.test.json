@@ -1,0 +1,131 @@
+{
+  "tags": {
+    "price": {
+      "label": "Цена"
+    },
+    "pricerange": {
+      "less": "Под {{ upper }} ",
+      "between": " {{ lower }} Кому {{ upper }} ",
+      "greater": " {{ lower }} И выше"
+    },
+    "range": {
+      "less": "Под {{ upper }} ",
+      "between": " {{ lower }} Кому {{ upper }} ",
+      "greater": " {{ lower }} И до"
+    }
+  },
+  "common": {
+    "required": "Обязательно",
+    "invalid": "Недопустимый",
+    "or": "Или",
+    "error": {
+      "error": "Ошибка",
+      "error_processing": "При обработке запроса произошла ошибка:",
+      "theme_not_fond": "Тема не найдена."
+    }
+  },
+  "checkout": {
+    "bank_card_cardholdername_required_message": "Пожалуйста, введите имя держателя карты (так же, как на вашей банковской карте)",
+    "invalid_bank_card_expiration_date_message": "Пожалуйста, введите действительный срок годности вашей банковской карты в формате MM/гг",
+    "bank_card_cvv_required_message": "Пожалуйста, введите код подтверждения вашей банковской карты",
+    "invalid_bank_card_cvv_message": "Пожалуйста, введите правильный код подтверждения вашей банковской карты",
+    "customer_information": {
+      "title": "Информация о клиентах",
+      "email": "Отправить по электронной почте",
+      "email_suggestion_text": "Вы имели в виду <a href=\"<span class=\" notranslate\"=\"\">{{Email}} \"></a>?",
+      "has_account_text": "У нас уже есть аккаунт?",
+      "log_in": "Войти",
+      "save_information_text": "Сохраните эту информацию для быстрой проверки в следующий раз",
+      "continue_text": "Продолжайте доставку методом",
+      "return_text": "Возвращение в корзину"
+    },
+    "shipping_method": {
+      "title": "Метод доставки",
+      "continue_text": "Продолжайте метод оплаты",
+      "return_text": "Возврат к информации о клиентах",
+      "no_avail_methods": "Нет способа доставки для текущего адреса доставки и доступных элементов!"
+    },
+    "payment_method": {
+      "title": "Способ оплаты",
+      "subtitle": "Все транзакции безопасны и зашифрованы. Информация о кредитных картах никогда не хранится.",
+      "credit_card": "Кредитная карточка",
+      "card_number": "Номер карты",
+      "cardholder_name": "Имя на карте",
+      "expiry_month": "Мм",
+      "expiry_year": "Гг",
+      "expiry_date": "ММ/ГГ",
+      "cvv": "Cvv",
+      "cvv_unknown_tooltip_text": "3-значный код безопасности обычно находится на обратной стороны вашей карты. Карты American Express имеют 4-значный код, расположенный спереди.",
+      "cvv_amex_tooltip_text": "4-значный код безопасности на лицевой части вашей карты.",
+      "cvv_other_tooltip_text": "3-значный код безопасности на обратной стороны вашей карты.",
+      "order_payed_by_gift_card": "Ваш заказ покрывает ваши подарочные карты.",
+      "order_is_free": "Ваш заказ <strong>бесплатный</strong>. Оплата не требуется.",
+      "billing_address": "Адрес выставления счетов",
+      "billing_address_equals_shipping": "То же, что и адрес доставки",
+      "billing_address_different": "Использование другого платежного адреса",
+      "continue_text": "Полный заказ",
+      "return_text": "Возврат к методу доставки",
+      "required_card_number_message": "Пожалуйста, введите номер вашей банковской карты",
+      "invalid_card_number_message": "Пожалуйста, введите действительный номер карты",
+      "required_cardholder_name_message": "Пожалуйста введите имя держателя карты",
+      "required_expiration_month_message": "Пожалуйста, введите истечения месяца",
+      "invalid_expiration_month_message": "Недействительный месяц",
+      "required_expiration_year_message": "Пожалуйста, введите истечения года",
+      "invalid_expiration_year_message": "Недействительный год",
+      "required_cvv_message": "Пожалуйста, введите КВВ",
+      "invalid_cvv_message": "Пожалуйста, введите правильный КВВ"
+    },
+    "address": {
+      "selected_address": "Выбранный адрес",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "company": "Компания (опция)",
+      "address1": "Адрес",
+      "address2": "Кв, Люкс и т.д. (необязательно)",
+      "city": "Города",
+      "country": "Страны",
+      "country_select_placeholder": "Выберите страну",
+      "province": "Государства",
+      "zip": "Почтовый индекс",
+      "phone": "Телефон (необязательно)"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "% b% d,% Y"
+  },
+  "notification": {
+    "error_title": "Ooops! Произошла ошибка!",
+    "error_message": "Пожалуйста, сообщите нам технические подробности этой ошибки, и мы будем лучше!",
+    "show_error_details_link_text": "Покажите мне технические детали",
+    "hide_error_details_link_text": "Скрыть технические детали"
+  },
+  "general": {
+    "loading": "Работает...",
+    "meta": {
+      "tags": "С меткой  {{ tags }}  \"\"",
+      "page": "Страницы {{ page }} "
+    },
+    "404": {
+      "title": "404 страница не найдена",
+      "subtext_html": "Запрошенной страницы не существует. Нажмите <a href=\"collections/all\">здесь</a> , чтобы продолжить покупки."
+    },
+    "breadcrumbs": {
+      "home": "Дома",
+      "home_link_title": "Вернуться на первый лист"
+    },
+    "forms": {
+      "post_error": "Извини, похоже, что-то пошло не так. Пожалуйста, исправьте следующие и представить еще раз:",
+      "post_field_error_html": "В <strong>  {{ field }}  </strong> {{ error }} "
+    },
+    "search": {
+      "no_results_html": "Ваш поиск \"  {{ terms }}  \" не дает никаких результатов.",
+      "results_for_html": "Ваш поиск \"  {{ terms }}  \" показал следующее:",
+      "title": "Поиск продуктов на нашем сайте"
+    },
+    "settings": {
+      "store": "Магазин:",
+      "language": "Язык:",
+      "currency": "Валюты:"
+    }
+  }
+}

@@ -47,7 +47,7 @@ namespace LocalizationTranslator.BL.Services
             {
                 var sourceValue = node.Value<string>();
                 var processedValue = _textPreprocessor.PreprocessText(sourceValue);
-                var resultValue = _translator.TranslateString(processedValue, from, to);
+                var resultValue = _translator.TranslateString(processedValue, from, to, "html");
                 var processedResult = _textPostprocessor.PostprocessText(resultValue);
 
                 var property = (JProperty)node.Parent;

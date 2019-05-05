@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LocalizationTranslator.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Name="mainWindow" >
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="215" Margin="41,44,0,0" VerticalAlignment="Top" Width="253">
+        <StackPanel x:Name="spButtons" HorizontalAlignment="Left" Height="215" Margin="41,44,0,0" VerticalAlignment="Top" Width="253" IsEnabled="{Binding ElementName=mainWindow, Path=IsNotProcessing}">
             <Button x:Name="btnLoad" Content="Load" Height="58" Click="BtnLoad_Click"/>
             <Button x:Name="btnTranslate" Content="Translate" Height="67" IsEnabled="False" Click="BtnTranslate_Click"/>
             <Button x:Name="btnDownload" Content="Dowload Result" Height="64" IsEnabled="False" Click="BtnDownload_Click"/>
@@ -42,6 +43,6 @@
             <Label Content="Source lng" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Height="26" Width="91" Cursor="ArrowCD"/>
             <Label Content="Target lng" HorizontalAlignment="Left" Margin="24,10,0,0" Grid.Row="2" VerticalAlignment="Top"/>
         </Grid>
-        <TextBlock x:Name="tbResult" HorizontalAlignment="Left" Margin="335,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="202" Width="447" IsEnabled="False"/>
+        <TextBlock x:Name="tbResult" HorizontalAlignment="Left" Margin="335,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="202" Width="447" IsEnabled="False" OpacityMask="Black" Background="#FFF0E7E7"/>
     </Grid>
 </Window>
