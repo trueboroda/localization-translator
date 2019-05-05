@@ -7,20 +7,19 @@ namespace LocalizationTranslator.BL.Services
     {
 
         private readonly ITranslator _translator;
+        private readonly ITextPreprocessor _textPreprocessor;
+        private readonly ITextPostprocessor _textPostprocessor;
 
-        public LocalizationJsonTranslator(ITranslator translator)
+        public LocalizationJsonTranslator(ITranslator translator, ITextPreprocessor textPreprocessor, ITextPostprocessor textPostprocessor)
         {
             _translator = translator;
+            _textPreprocessor = textPreprocessor;
+            _textPostprocessor = textPostprocessor;
         }
 
         public JObject Translate(JObject source, string from, string to)
         {
             var result = (JObject)source.DeepClone();
-
-            //foreach (var item in result.Children<JProperty>())
-            //{
-            //    TranslateNode(item, from, to);
-            //}
 
             TranslateNode(result, from, to);
 
@@ -28,6 +27,12 @@ namespace LocalizationTranslator.BL.Services
         }
 
 
+        /// <summary>
+        /// recursive go down through json tree and traslating string leaf
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
         private void TranslateNode(JToken node, string from, string to)
         {
 
@@ -41,14 +46,13 @@ namespace LocalizationTranslator.BL.Services
             else if (node.Type == JTokenType.String)
             {
                 var sourceValue = node.Value<string>();
-                var resultValue = _translator.TranslateString(sourceValue, from, to);
+                var processedValue = _textPreprocessor.PreprocessText(sourceValue);
+                var resultValue = _translator.TranslateString(processedValue, from, to);
+                var processedResult = _textPostprocessor.PostprocessText(resultValue);
 
                 var property = (JProperty)node.Parent;
 
-                property.Value = resultValue;
-
-
-
+                property.Value = processedResult;
 
             }
 

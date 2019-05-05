@@ -254,7 +254,7 @@ namespace LocalizationTranslator.BL.Services
         /// <param name="to">To language</param>
         /// <param name="contentType">Content Type</param>
         /// <returns></returns>
-        public string TranslateString(string text, string from, string to, string contentType = "text/plain")
+        public string TranslateString(string text, string from, string to, string contentType = "plain")
         {
             string[] texts = new string[1];
             texts[0] = text;
@@ -272,7 +272,7 @@ namespace LocalizationTranslator.BL.Services
         /// <param name="to">To language code. Must be a valid language</param>
         /// <param name="contentType">text/plan or text/html depending on the type of string</param>
         /// <returns></returns>
-        public string[] TranslateArray(string[] texts, string from, string to, string contentType = "text/plain")
+        public string[] TranslateArray(string[] texts, string from, string to, string contentType = "plain")
         {
             string fromCode = string.Empty;
             string toCode = string.Empty;
@@ -310,6 +310,10 @@ namespace LocalizationTranslator.BL.Services
                 if (thiscategory == "general") thiscategory = null;
             }
             if (thiscategory != null) @params += "&category=" + System.Web.HttpUtility.UrlEncode(category);
+            if (!string.IsNullOrEmpty(contentType))
+            {
+                @params += "&textType=" + contentType;
+            }
             string uri = ApiHost + TranslateRoute + @params;
 
 

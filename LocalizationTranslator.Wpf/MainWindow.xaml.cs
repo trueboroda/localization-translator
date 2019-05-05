@@ -38,7 +38,8 @@ namespace LocalizationTranslator.Wpf
             dialogService = new DefaultDialogService();
             jsonFileService = new JsonFileService();
             var msAzureTraslator = new MsAzureTranslator(SUBS_KEY);
-            translator = new LocalizationJsonTranslator(msAzureTraslator);
+            var escapeTextProcessor = new EscapeTextWrapper();
+            translator = new LocalizationJsonTranslator(msAzureTraslator, escapeTextProcessor, escapeTextProcessor);
 
             _lngs = msAzureTraslator.AvailableLanguages;
 

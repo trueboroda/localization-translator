@@ -1,0 +1,134 @@
+{
+    "tags": {
+        "price": {
+            "label": "Price"
+        },
+        "pricerange": {
+            "less": "Under {{ upper }}",
+            "between": "{{ lower }} to {{ upper }}",
+            "greater": "{{ lower }} & Above"
+        },
+        "range": {
+            "less": "Under {{ upper }}",
+            "between": "{{ lower }} to {{ upper }}",
+            "greater": "{{ lower }} & Up"
+        }
+    },
+    "common": {
+        "required": "Required",
+        "invalid": "Invalid",
+        "or": "or",
+        "error": {
+            "error": "Error",
+            "error_processing": "An error occurred while processing your request:",
+            "theme_not_fond": "No theme found."
+        }
+    },
+    "checkout": {
+        
+        "bank_card_cardholdername_required_message": "Please enter cardholder name (same as on your bank card)",
+        "invalid_bank_card_expiration_date_message": "Please enter valid expiration date of your bank card in MM / YY format",
+        "bank_card_cvv_required_message": "Please enter verification code of your bank card",
+        "invalid_bank_card_cvv_message": "Please enter correct verification code of your bank card",
+       
+        "customer_information": {
+            "title": "Customer information",
+            "email": "Email",
+            "email_suggestion_text": "Did you mean <a href=\"{{ email }}\"></a>?",
+            "has_account_text": "Already have an account with us?",
+            "log_in": "Log in",
+            "save_information_text": "Save this information for faster checkout next time",
+            "continue_text": "Continue to shipping method",
+            "return_text": "Return to cart"
+        },
+        "shipping_method": {
+            "title": "Shipping method",
+            "continue_text": "Continue to payment method",
+            "return_text": "Return to customer information",
+            "no_avail_methods": "There is no shipping method for current shipping address and items available!"
+        },
+        "payment_method": {
+            "title": "Payment method",
+            "subtitle": "All transactions are secure and encrypted. Credit card information is never stored.",
+            "credit_card": "Credit card",
+            "card_number": "Card number",
+            "cardholder_name": "Name on card",
+            "expiry_month": "MM",
+            "expiry_year": "YY",
+            "expiry_date": "MM / YY",
+            "cvv": "CVV",
+            "cvv_unknown_tooltip_text": "3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.",
+            "cvv_amex_tooltip_text": "4-digit security code on the front of your card.",
+            "cvv_other_tooltip_text": "3-digit security code on the back of your card.",
+            "order_payed_by_gift_card": "Your order is covered by your gift cards.",
+            "order_is_free": "Your order is <strong>free</strong>. No payment is required.",
+            "billing_address": "Billing address",
+            "billing_address_equals_shipping": "Same as shipping address",
+            "billing_address_different": "Use a different billing address",
+            "continue_text": "Complete order",
+            "return_text": "Return to shipping method",
+            "required_card_number_message": "Please enter your bank card number",
+            "invalid_card_number_message": "Please enter valid card number",
+            "required_cardholder_name_message": "Please enter card holder name",
+            "required_expiration_month_message": "Please enter expiration month",
+            "invalid_expiration_month_message": "Invalid month",
+            "required_expiration_year_message": "Please enter expiration year",
+            "invalid_expiration_year_message": "Invalid year",
+            "required_cvv_message": "Please enter CVV",
+            "invalid_cvv_message": "Please enter correct CVV"
+        },
+        "address": {
+            "selected_address": "Selected address",
+            "first_name": "First name",
+            "last_name": "Last name",
+            "company": "Company (optional)",
+            "address1": "Address",
+            "address2": "Apt, suite, etc. (optional)",
+            "city": "City",
+            "country": "Country",
+            "country_select_placeholder": "Select country",
+            "province": "State",
+            "zip": "Zip / Postal code",
+            "phone": "Phone (optional)"
+        }
+    },
+    "date_formats": {
+        "month_day_year": "%b %d, %Y"
+    },
+    "notification": {
+        "error_title": "Ooops! An error is occured!",
+        "error_message": "Please tell us technical details for this error and we will be better!",
+        "show_error_details_link_text": "Show me the technical details",
+        "hide_error_details_link_text": "Hide the technical details"
+    },
+    "general": {
+        "loading": "Working...",
+        "meta": {
+            "tags": "Tagged \"{{ tags }}\"",
+            "page": "Page {{ page }}"
+        },
+        "404": {
+            "title": "404 Page Not Found",
+            "subtext_html": "The page you requested does not exist. Click <a href=\"collections/all\">here</a> to continue shopping."
+        },
+        "breadcrumbs": {
+            "home": "Home",
+            "home_link_title": "Back to the frontpage"
+        },
+        "forms": {
+            "post_error": "Sorry, looks like something went wrong. Please correct the following and submit again:",
+            "post_field_error_html": "The <strong>{{ field }}</strong> {{ error }}"
+        },
+        "search": {
+            "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
+            "results_for_html": "Your search for \"{{ terms }}\" revealed the following:",
+            "title": "Search for products on our site"
+        },
+        "settings": {
+            "store": "Store:",
+            "language": "Language:",
+            "currency": "Currency:"
+        }
+    }
+    
+}

@@ -23,9 +23,9 @@ namespace LocalizationTranslator.Core.Services
 
         string LanguageCodeToLanguageName(string languagecode);
 
-        string TranslateString(string text, string from, string to, string contentType = "text/plain");
+        string TranslateString(string text, string from, string to, string contentType = "plain");
 
-        string[] TranslateArray(string[] texts, string from, string to, string contentType = "text/plain");
+        string[] TranslateArray(string[] texts, string from, string to, string contentType = "plain");
 
         //string Translate(TranslationObject translationObject);
 

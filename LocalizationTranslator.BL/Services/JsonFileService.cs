@@ -23,6 +23,7 @@ namespace LocalizationTranslator.BL.Services
             using (StreamWriter file = File.CreateText(path))
             using (JsonTextWriter writer = new JsonTextWriter(file))
             {
+                writer.Formatting = Formatting.Indented;
                 obj.WriteTo(writer);
             }
         }
