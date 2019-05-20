@@ -64,7 +64,7 @@
     "bank_card_number_required_message": "Пожалуйста, введите номер вашей банковской карты",
     "invalid_bank_card_number_message": "Пожалуйста, введите действительный номер вашей банковской карты",
     "bank_card_cardholdername_required_message": "Пожалуйста, введите имя держателя карты (так же, как на вашей банковской карте)",
-    "invalid_bank_card_expiration_date_message": "Пожалуйста, введите действительный срок годности вашей банковской карты в формате ММ/ГГ",
+    "invalid_bank_card_expiration_date_message": "Пожалуйста, введите действительный срок годности вашей банковской карты в формате MM/гг",
     "bank_card_cvv_required_message": "Пожалуйста, введите код подтверждения вашей банковской карты",
     "invalid_bank_card_cvv_message": "Пожалуйста, введите правильный код подтверждения вашей банковской карты",
     "mobile": {
@@ -99,7 +99,7 @@
       "cvv": "CVV",
       "cvv_unknown_tooltip_text": "3-значный код безопасности обычно находится на обратной стороны вашей карты. Карты American Express имеют 4-значный код, расположенный спереди.",
       "cvv_amex_tooltip_text": "4-значный код безопасности на лицевой части вашей карты.",
-      "cvv_other_tooltip_text": "3-значный код безопасности на обратной стороне вашей карты.",
+      "cvv_other_tooltip_text": "3-значный код безопасности на обратной стороны вашей карты.",
       "order_payed_by_gift_card": "Ваш заказ покрывает ваши подарочные карты.",
       "order_is_free": "Ваш заказ <strong>бесплатный</strong>. Оплата не требуется.",
       "billing_address": "Адрес выставления счетов",
@@ -110,7 +110,7 @@
       "required_card_number_message": "Пожалуйста, введите номер вашей банковской карты",
       "invalid_card_number_message": "Пожалуйста, введите действительный номер карты",
       "required_cardholder_name_message": "Пожалуйста введите имя держателя карты",
-      "required_expiration_month_message": "Пожалуйста, введите месяц истичения карты",
+      "required_expiration_month_message": "Пожалуйста, введите месяца истичения карты",
       "invalid_expiration_month_message": "Недействительный месяц",
       "required_expiration_year_message": "Пожалуйста, введите год истечения карты",
       "invalid_expiration_year_message": "Недействительный год",
@@ -144,7 +144,7 @@
   "general": {
     "loading": "Работает...",
     "meta": {
-      "tags": "С меткой \"{{ tags }}\"",
+      "tags": "С меткой  {{ tags }}  \"\"",
       "page": "Страницы {{ page }} "
     },
     "404": {
@@ -152,12 +152,12 @@
       "subtext_html": "Запрошенной страницы не существует. Нажмите <a href=\"collections/all\">здесь</a> , чтобы продолжить покупки."
     },
     "breadcrumbs": {
-      "home": "Домашняя",
-      "home_link_title": "Вернуться на домашнюю страницу"
+      "home": "Дома",
+      "home_link_title": "Вернуться на первый лист"
     },
     "forms": {
-      "post_error": "Извините, похоже, что-то пошло не так. Пожалуйста, исправьте следующие поля и отправьте еще раз:",
-      "post_field_error_html": "В <strong>{{ field }}</strong> {{ error }} "
+      "post_error": "Извини, похоже, что-то пошло не так. Пожалуйста, исправьте следующие и представить еще раз:",
+      "post_field_error_html": "В <strong>  {{ field }}  </strong> {{ error }} "
     },
     "search": {
       "no_results_html": "Ваш поиск \"  {{ terms }}  \" не дает никаких результатов.",
@@ -167,32 +167,32 @@
     "settings": {
       "store": "Магазин:",
       "language": "Язык:",
-      "currency": "Валюта:"
+      "currency": "Валюты:"
     }
   },
   "blogs": {
     "article": {
-      "author_on_date_html": "Опубликовано от имени {{ author }} в {{ date }} ",
-      "older_post": "Старай пост",
-      "newer_post": "Новый пост",
+      "author_on_date_html": "  {{ author }}   Опубликовано на {{ date }} ",
+      "older_post": "Старая почта",
+      "newer_post": "Новая почта",
       "tags": "Теги",
-      "comment_meta_html": "{{ author }} от {{ date }} ",
+      "comment_meta_html": " {{ author }} На {{ date }} ",
       "read_more": "Читать подробнее",
-      "share_this_post": "Поделиться этой записью"
+      "share_this_post": "Поделитесь этой должности"
     },
     "comments": {
       "title": "Оставить комментарий",
       "name": "Имя",
-      "email": "Email",
+      "email": "Отправить по электронной почте",
       "message": "Сообщение",
-      "post": "Оставить комментарий",
+      "post": "Опубликовать комментарий",
       "moderated": "Обратите внимание, что комментарии должны быть утверждены, прежде чем они будут опубликованы.",
-      "success_moderated": "Ваш комментарий был размещен успешно. Мы опубликуем его через некоторое время, так как наш блог модерируется.",
+      "success_moderated": "Ваш комментарий был размещен успешно. Мы будем публиковать его в некоторое время, так как наш блог модерируется.",
       "success": "Ваш комментарий был размещен успешно! Спасибо!",
       "comments_with_count": {
-        "zero": "0 комментариев",
+        "zero": "0 комментарий",
         "one": "1 комментарий",
-        "other": " {{ count }} комментариев"
+        "other": " {{ count }} Комментарии"
       }
     },
     "sidebar": {
@@ -202,24 +202,24 @@
   },
   "cart": {
     "general": {
-      "title": "Корзина",
+      "title": "Корзину",
       "remove": "Удалить",
       "note": "Специальные инструкции для продавца",
       "subtotal": "Всего товаров",
-      "subtotalWithTax": "Итого сумма товаров (вкл НДС)",
+      "subtotalWithTax": "Итого товаров (Inc НДС)",
       "total": "Общая",
       "discounts_total": "Общая сумма скидок",
       "update": "Обновить корзину",
       "updating_cart_message": "Обновление корзины...",
-      "loading_cart_message": "Загрузка корзины...",
+      "loading_cart_message": "Погрузка тележки...",
       "updating_cart_error_message": "Произошла ошибка при обновлении корзины",
       "checkout": "Оформления заказа",
-      "empty": "Ваша корзина в настоящее время пуста.",
+      "empty": "Ваша Тележка в настоящее время пуста.",
       "adding": "Добавление продукта в корзину...",
       "continue_browsing_html": "Продолжить просмотр <a href=\"collections\">здесь</a>.",
       "view_cart": "Посмотреть корзину",
       "close_cart": "Закрыть корзину",
-      "quick_add_description": "Вы можете быстро добавить продукт в корзину, введя его SKU или имя в поле ниже",
+      "quick_add_description": "Вы можете быстро добавить продукт в корзину, введя его Сеа или имя в поле ниже",
       "add": "Добавить",
       "product_search_empty": "Продукты не найдены",
       "product_search_progress": "Поиск...",
@@ -232,39 +232,39 @@
       "enter_number": "Пожалуйста, введите номер",
       "quantity_more_zero": "Количество должно быть больше 0",
       "subscription_period": "Подписка с периодом:",
-      "product_added_request": "Продукт добавляется в запрос квоты",
+      "product_added_request": "Продукт добавляется в цитату запроса",
       "go_request": "Перейти к цитатой запрос",
-      "update_quote": "Обновление запроса квоты...",
-      "product_added": "Продукт добавлен в корзину",
+      "update_quote": "Обновление запроса цитатой...",
+      "product_added": "Продукт добавляется в корзину",
       "placeholders": {
-        "product_search": "Введите SKU или название продукта для поиска..."
+        "product_search": "Начало ввода Сеа или название продукта для поиска..."
       }
     }
   },
   "wishlist": {
     "general": {
-      "title": "Списки",
-      "my_lists": "Личные списки",
+      "title": "Списках",
+      "my_lists": "Частные списки",
       "friends_lists": "Списки друзей",
       "select_list": "Пожалуйста, выберите список",
       "remove": "Удалить",
       "settings": "Настройки списков",
       "create": "Создать список",
-      "public_list": "Публичный",
+      "public_list": "Общественного",
       "add_all_products": "Добавить все продукты",
       "emptyData": "Списки не определены",
       "copy_message": "Поздравляю! Теперь вы можете скопировать ссылку и поделиться своим списком с друзьями",
       "update": "Список обновлений",
       "add": "Добавить",
       "updating_wishlist_message": "Обновление списка...",
-      "loading_wishlist_message": "Загрузка списка...",
+      "loading_wishlist_message": "Список загрузки...",
       "empty": "Ваш список в настоящее время пуст.",
       "continue_browsing_html": "Продолжить просмотр <a href=\"collections\">здесь</a>.",
       "list_not_selected": "Пожалуйста, выберите список",
-      "wish_list_title": "Список желаний",
+      "wish_list_title": "Список пожеланий",
       "wish_list_description": "Добавление элементов, которые вам нравятся",
       "shopping_list_title": "Список покупок",
-      "shopping_list_description": "Добавление элементов, которые вы хотите купить",
+      "shopping_list_description": "Добавление элементов, которые вы хотите делать в магазине",
       "continue_shopping": "Продолжить покупки",
       "view_your_list": "Просмотреть список",
       "list_contains": "Пункт уже в списке",
@@ -272,46 +272,46 @@
       "add_to_list": "Добавить в список",
       "adding_to_list": "Добавление к списку...",
       "added_to_list": "1 элемент добавлен в",
-      "added_to_cart": "Продукт добавлен в корзину"
+      "added_to_cart": "Продукт добавляется в корзину"
     }
   },
   "quotes": {
     "general": {
-      "empty": "У вас нет запросов квот.",
+      "empty": "У вас нет запросов на цитаты.",
       "continue_browsing_html": "Продолжить просмотр <a href=\"collections/all\">здесь</a>.",
       "title": "Котировки",
       "email": "Адрес электронной почты",
       "first_name": "Имя",
       "last_name": "Фамилия",
       "phone": "Телефон",
-      "company": "Компания",
-      "request_shipping_quote": "Запросить квоту доставки",
-      "submit_quote": "Отправить запрос квоты",
+      "company": "Компании",
+      "request_shipping_quote": "Запросить цитату доставки",
+      "submit_quote": "Отправить запрос цитаты",
       "remove": "Удалить",
       "remarks": {
         "title": "Замечания",
-        "text": "У вас есть общее замечание к этому запросу ковоты?"
+        "text": "У вас есть общее замечание с этим цитатой запрос?"
       }
     },
     "request": {
-      "loading_request": "Загрузка запроса квоты...",
-      "quote_is_empty": "Запрос квоты в настоящее время пуст.",
-      "quote_update": "Обновление запроса квоты...",
+      "loading_request": "Загрузка цитатой запроса...",
+      "quote_is_empty": "Запрос котировки в настоящее время пуст.",
+      "quote_update": "Обновление запроса цитатой...",
       "email_address": "Адрес электронной почты",
       "enter_email": "Пожалуйста, введите свой адрес электронной почты",
       "not_valid_email": "Пожалуйста, введите действительный адрес электронной почты",
       "remarks": "Замечания",
       "remarks_quote_request": "У вас есть общее замечание с этим цитатой запрос?",
-      "shipping_quote": "Запросить квоту доставки",
+      "shipping_quote": "Запросить цитату доставки",
       "remove": "Удалить",
       "enter_unique_quantities": "Пожалуйста, введите уникальные количества",
-      "email": "Email:",
+      "email": "Отправить по электронной почте:",
       "comment": "Комментарий:",
-      "created": "Создано:",
+      "created": "Создан:",
       "status": "Статус:",
       "billing_address": "Адрес выставления счета:",
       "shipping_address": "Адрес доставки:",
-      "add_tier": "Добавление строки",
+      "add_tier": "Добавление уровня",
       "subtotal": "Промежуточный итог",
       "discount": "Скидка",
       "tax": "Налог",
@@ -320,8 +320,8 @@
       "enter_number": "Пожалуйста, введите номер",
       "enter_positiv_value": "Пожалуйста, введите положительное значение",
       "button": {
-        "submit_quote": "Отправить запрос квоты",
-        "reject_quote": "Отклонить запрос квоты",
+        "submit_quote": "Отправить запрос цитаты",
+        "reject_quote": "Отклонить запрос цитаты",
         "confirm_quote": "Подтвердите и оформить заказ"
       }
     }
@@ -329,12 +329,12 @@
   "bulk_order": {
     "general": {
       "title": "Массовый заказ",
-      "description": "Быстро добавить элементы в корзину, введя SKUs позиции и количество.",
-      "sku_field_header": "Продукт SKU",
+      "description": "Быстро добавить элементы в корзину, введя пункт SKUs и количествах.",
+      "sku_field_header": "Продукт Сеа",
       "quantity_field_header": "Количество",
-      "add_new_record": "Добавление новой записи",
+      "add_new_record": "Добавление нового рекорда",
       "add_to_cart": "Добавить в корзину",
-      "csv_description": "Хотите сохранить время и заказать быстрее? Просто копируйте и вставляйте записи элементов из вашего файла CSV в поле ниже, используя следующий формат: SKU, количество. Каждая запись должна начинаться с новой строки.",
+      "csv_description": "Хотите экономить время и порядок быстрее? Просто копировать и вставлять записи элементов из вашего файла СБВ в поле ниже, используя следующий формат: Сеа, количество. Каждая запись должна запускается с новой строки.",
       "csv_field_placeholder": "Пример форматирования: 6AF8SM0VПФ6, 10",
       "items_not_found_message": "Продукты со следующими SKUs не были добавлены в корзину:"
     }
@@ -342,18 +342,18 @@
   "collections": {
     "general": {
       "no_matches": "К сожалению, нет продуктов, подходящих для поиска.",
-      "link_title": "Просмотрите нашу {{ title }} коллекцию",
+      "link_title": "Просмотрите нашу   {{ title }}   коллекцию",
       "items_with_count": {
         "zero": "0 элемент",
         "one": "1 элемент",
-        "other": " {{ count }} элементов"
+        "other": " {{ count }} Элементы"
       }
     },
     "sidebar": {
       "filters": "Фильтры",
-      "shop_by": "Купить по",
+      "shop_by": "Магазин по",
       "all": "Все",
-      "all_collection": "Все {{ collection_title }}",
+      "all_collection": "Все {{ collection_title }} ",
       "no_tags": "Добавить теги к вашей продукции для этого списка, чтобы построить себя."
     },
     "sorting": {
@@ -362,16 +362,16 @@
       "best_selling": "Самый продаваемый",
       "az": "По алфавиту, A-Z",
       "za": "В алфавитном порядке, Z-A",
-      "price_ascending": "Цена, от низкой к высокой",
-      "price_descending": "Цена, от высокой к низкой",
-      "date_descending": "Дата, от новых к старым",
-      "date_ascending": "Дата, от старых к новым"
+      "price_ascending": "Цена, низкая к высокому",
+      "price_descending": "Цена, от высокой до низкой",
+      "date_descending": "Дата, новая для старых",
+      "date_ascending": "Дата, от старого к новому"
     }
   },
   "contact": {
     "form": {
       "name": "Имя",
-      "email": "Email",
+      "email": "Отправить по электронной почте",
       "phone": "Номер телефона",
       "message": "Сообщение",
       "send": "Отправить",
@@ -386,11 +386,11 @@
       "menu_label": {
         "orders": "Заказы",
         "subscriptions": "Подписки",
-        "quotes": "Квоты",
+        "quotes": "Запросы по цитатам",
         "profile": "Профиль",
         "addresses": "Адреса",
         "change_password": "Изменить пароль",
-        "wishlist": "Списки"
+        "wishlist": "Списках"
       }
     },
     "activate_account": {
@@ -406,19 +406,19 @@
       "default": "По умолчанию",
       "add_new": "Добавление нового адреса",
       "edit_old": "Редактировать адрес",
-      "first_name": "Имя",
+      "first_name": "Первое имя",
       "last_name": "Фамилия",
-      "company": "Компания",
-      "address1": "Адрес 1",
-      "address2": "Адрес 2",
-      "city": "Город",
-      "country": "Страна",
+      "company": "Компании",
+      "address1": "Address1",
+      "address2": "Address2",
+      "city": "Города",
+      "country": "Страны",
       "province": "Провинция",
-      "zip": "Почтовый индекс",
+      "zip": "Почтовый/почтовый индекс",
       "phone": "Телефон",
       "set_default": "Установить в качестве адреса по умолчанию?",
       "add": "Добавить адрес",
-      "update": "Обновить адрес",
+      "update": "Адрес обновления",
       "cancel": "Отмена",
       "edit": "Редактировать",
       "delete": "Удалить",
@@ -433,17 +433,17 @@
       "select_country": "Выберите страну",
       "select_country_valid": "Пожалуйста, выберите вашу страну",
       "city_valid": "Пожалуйста, введите ваш город",
-      "addres_line_1": "Адрес строка 1",
-      "addres_line_1_valid": "Пожалуйста, введите адрес строку 1",
-      "addres_line_2": "Адрес строка 2",
+      "addres_line_1": "Адрес строки 1",
+      "addres_line_1_valid": "Пожалуйста, введите адрес строки 1",
+      "addres_line_2": "Адрес строки 2",
       "zip_valid": "Пожалуйста, введите свой почтовый индекс",
       "shipping_address": "Адрес доставки",
-      "same_address": "Адрес доставки такой же, как платежный адрес",
+      "same_address": "Доставка адрес такой же, как платежный адрес",
       "select_your": "Пожалуйста, выберите"
     },
     "login": {
-      "title": "Вход",
-      "email": "Email",
+      "title": "Входа",
+      "email": "Отправить по электронной почте",
       "user_name": "Имя пользователя",
       "password": "Пароль",
       "forgot_login": "Забыли имя пользователя?",
@@ -464,40 +464,40 @@
       "none": "Вы еще не разместили никаких заказов."
     },
     "order": {
-      "title": "Заказ {{ name }}",
+      "title": "Заказ {{ name }} ",
       "get_invoice": "Получить счет",
-      "placed_on_date_html": "Размещенные от {{ date }} ",
-      "cancelled_on": "Заказ отменен {{ date }}",
+      "placed_on_date_html": "Размещенные на {{ date }} ",
+      "cancelled_on": "Заказ отменен на {{ date }} ",
       "cancel_reason": "Причина",
       "billing_address": "Платежный адрес",
       "payment_status": "Статус платежа",
       "new_payment": "Платить",
       "shipping_address": "Адрес доставки",
-      "subscription": "Подписка",
+      "subscription": "Подписки",
       "subscription_comment": "Этот заказ был сгенерированный по подписке",
       "fulfillment_status": "Статус выполнения",
       "discount": "Скидка",
       "shipping": "Доставка",
       "tax": "Налог",
       "product": "Продукта",
-      "sku": "SKU",
+      "sku": "Sku",
       "price": "Цена",
       "quantity": "Количество",
       "total": "Общая",
       "fulfilled_on": "Выполнено на {{ date }} ",
       "subtotal": "Промежуточный итог",
       "status": {
-        "unpaid": "Неоплаченный",
-        "pending": "Ожидает обработки",
-        "processing": "Обработка",
-        "ready": "Готов к отправке",
+        "unpaid": "Неоплаченные",
+        "pending": "Ожидающие",
+        "processing": "Обработки",
+        "ready": "Готов отправить",
         "sent": "Отправлено",
         "partially_sent": "Частично Отправлено",
         "cancelled": "Отменен"
       },
       "totals": "Итоги заказа",
       "payment": {
-        "title": "Оплата",
+        "title": "Оплаты",
         "amount": "Сумма платежа",
         "pay_order": "Порядок оплаты"
       }
@@ -513,31 +513,31 @@
       "status": "Статус",
       "period": "Период",
       "date_created": "Дата начала",
-      "date_trial_end": "Окончание времееной подписки",
+      "date_trial_end": "Окончание судебного процесса",
       "total": "Общая",
       "date_ended": "Дата окончания",
       "none": "Вы еще не разместили никаких подписок.",
       "intervals": {
         "_every": "Каждый",
         "days_1": "Ежедневно",
-        "days_plural": "Дни",
+        "days_plural": "Дней",
         "weeks_1": "Еженедельно",
-        "weeks_plural": "Недели",
+        "weeks_plural": "Недель",
         "months_1": "Ежемесячно",
-        "months_plural": "Месяцы",
+        "months_plural": "Месяцев",
         "years_1": "Год",
-        "years_plural": "Года"
+        "years_plural": "Лет"
       }
     },
     "subscription": {
-      "title": "Подписка {{ number }}",
-      "placed_on_date_html": "Размещенные от {{ date }}",
-      "cancelled_on": "Подписка отменена {{ date | date: 'medium'}} ",
+      "title": "Подписки {{ number }} ",
+      "placed_on_date_html": "Размещенные на {{ date }} ",
+      "cancelled_on": "Подписка отменена на {{ date | date: 'medium'}} ",
       "cancel_reason": "Причина",
-      "details-sentence_": "Доставка по подписке каждые {{intervalCount}} {{interval}} начина с {{createdDate | date }} до {{endDate | date }}. Следующий биллинг {{currentPeriodEnd | date }}.",
-      "details-sentence": "Доставка по подписке каждые {{intervalCount}} {{interval}} c {{createdDate | date }}. Следующий биллинг   {{currentPeriodEnd | date }}  на.",
-      "details-sentence1": "Доставка по подписке каждые 20 дней с 22 ноября, 2016. Следующий биллинг на 31 декабря 2016.",
-      "details-sentence2": "Доставка по подписке каждые 2 недели с ноября 22, 2016 до ноября 21, 2017. Следующий биллинг на 31 декабря 2016.",
+      "details-sentence_": "Подписка судоходства каждый   {{intervalCount}}     {{interval}}     {{endDate | date }}  до тех пор, пока.   {{createdDate | date }}   Следующий биллинг   {{currentPeriodEnd | date }}  на.",
+      "details-sentence": "Подписка судоходства каждый   {{intervalCount}}     {{interval}}   из   {{createdDate | date }}  . Следующий биллинг   {{currentPeriodEnd | date }}  на.",
+      "details-sentence1": "Подписка судоходства каждые 20 дней с ноября 22, 2016. Следующий биллинг на 31 декабря 2016.",
+      "details-sentence2": "Подписка судоходства каждые 2 недели с ноября 22, 2016 до ноября 21, 2017. Следующий биллинг на 31 декабря 2016.",
       "shipping_address": "Адрес доставки",
       "discount": "Скидка",
       "shipping": "Доставка",
@@ -550,7 +550,7 @@
       "subtotal": "Промежуточный итог",
       "balance": "Баланс",
       "orders": "Заказы",
-      "order-sentence": " {{order | orderToSummarizedStatusLabel}} {{order.number}} от {{order.createdDate | date}}, {{order.total.formattedAmount}} ",
+      "order-sentence": " {{order | orderToSummarizedStatusLabel}}   {{order.number}}   от  , {{order.createdDate | date}}   {{order.total.formattedAmount}} ",
       "billing_address": "Адрес выставления счетов",
       "cancel": "Отмена подписки",
       "cancel_reason_lbl": "Опишите причину отмены",
@@ -558,18 +558,18 @@
       "totals": "Итоги подписки"
     },
     "quotes": {
-      "title": "Запросы квот",
-      "none": "Вы еще не представили никаких запросов квот.",
+      "title": "Запросы по цитатам",
+      "none": "Вы еще не представили никаких запросов по цитатам.",
       "quote_number": "Номер",
       "date": "Дата",
       "total": "Общая",
       "status": "Статус"
     },
     "quote": {
-      "title": "Запрос квоты {{ number }} ",
-      "comment": "Об этой квоте:",
-      "date": "Дата запроса квоты:",
-      "status": "Статус квоты:"
+      "title": "Запрос цитаты {{ number }} ",
+      "comment": "Об этой цитате:",
+      "date": "Дата запроса цитата:",
+      "status": "Статус цитаты:"
     },
     "recover_password": {
       "title": "Сбросить пароль",
@@ -579,17 +579,17 @@
       "subtext": "Мы вышлем вам электронное письмо для сброса пароля."
     },
     "reset_password": {
-      "title": "Сброс пароля учетной записи",
-      "subtext": "Введите новый пароль для {{ email }}",
+      "title": "Пароль учетной записи сброса",
+      "subtext": "Введите новый пароль для {{ email }} ",
       "password": "Пароль",
       "password_confirm": "Подтвердите пароль",
       "submit": "Пароль сброса"
     },
     "register": {
       "title": "Создание учетной записи",
-      "first_name": "Имя",
+      "first_name": "Первое имя",
       "last_name": "Фамилия",
-      "email": "Email",
+      "email": "Отправить по электронной почте",
       "user_name": "Имя пользователя",
       "password": "Пароль",
       "submit": "Создать",
@@ -597,10 +597,10 @@
     },
     "edit_profile": {
       "title": "Редактировать профиль",
-      "first_name": "Имя",
+      "first_name": "Первое имя",
       "last_name": "Фамилия",
-      "email": "Email",
-      "submit": "Обновить",
+      "email": "Отправить по электронной почте",
+      "submit": "Обновление",
       "cancel": "Отмена"
     },
     "change_password": {
@@ -623,7 +623,7 @@
     "recover_login": {
       "title": "Забыли имя пользователя",
       "subtile": "Заполните эту форму, чтобы восстановить имя пользователя",
-      "email": "Email",
+      "email": "Отправить по электронной почте",
       "submit": "Отправить",
       "success": "На ваш адрес отправлено электронное письмо с вашим именем пользователя."
     }
@@ -639,19 +639,19 @@
     "featured_collection_rows": {
       "heading": "Рекомендуемые коллекции",
       "more": "Больше",
-      "no_products_in_collection_html": "У вас нет продуктов в вашей {{ collection_title }} коллекции.",
-      "instructions_to_add_products_to_collection_html": "Этот заполнитель появится до тех пор, пока вы <a href=\"{{коллектион_админ_урл}}\"> не добавите продукт в эту коллекцию</a> или отключить <em>рекомендуемые строки 1</em> в настройках темы.",
+      "no_products_in_collection_html": "У вас нет продуктов в вашей   {{ collection_title }}   коллекции.",
+      "instructions_to_add_products_to_collection_html": "Этот заполнитель появится до тех пор, пока вы <a href=\"<span class=\" notranslate\"=\"\">{{коллектион_админ_урл}} \"> не добавите продукт в эту коллекцию</a> или отключить <em>Рекомендуемые строки 1</em> в настройках темы.",
       "add_a_product": "Добавление продукта",
       "example_product_title": "Пример названия продукта",
-      "more_in_collection": "Больше {{ collection_title }}"
+      "more_in_collection": "Больше {{ collection_title }} "
     }
   },
   "layout": {
     "cart": {
-      "cart": "Корзина"
+      "cart": "Корзину"
     },
     "quotes": {
-      "quote": "Квота"
+      "quote": "Цитата"
     },
     "customer": {
       "view_account": "Просмотреть учетную запись",
@@ -659,7 +659,7 @@
       "logged_in_as_label": "Вошли в систему как",
       "logged_in_on_behalf_of_html": "Войти в систему от имени {{ first_name }} ",
       "logged_in_on_behalf_of_label": "Войти в систему от имени",
-      "log_out": "Выйти",
+      "log_out": "Выйти из журнала",
       "sign_in": "Войти",
       "create_account": "Создание учетной записи"
     },
@@ -668,22 +668,22 @@
       "mobile_menu": "Меню"
     },
     "search_bar": {
-      "placeholder": "Поиск среди всех продуктов...",
+      "placeholder": "Поиск всех продуктов...",
       "submit": "Поиск"
     },
     "footer": {
       "theme_settings": "Настройки темы",
-      "instructions_for_linklist_html": "Выберите список ссылок, чтобы показать здесь, в вашем {{ theme_settings_link }} под {{ theme_settings_footer_linklist_path }}.",
-      "instructions_for_text_content_html": "Добавить некоторый текст, чтобы показать здесь  в вашем {{ theme_settings_link }}.",
+      "instructions_for_linklist_html": "Выберите список ссылок, чтобы показать здесь, в   {{ theme_settings_link }}   вашем   {{ theme_settings_footer_linklist_path }}  под.",
+      "instructions_for_text_content_html": "Добавить некоторый текст, чтобы показать здесь,   {{ theme_settings_link }}  в вашем.",
       "quick_links": "Быстрые ссылки",
       "get_in_touch": "Войти в контакт",
-      "store_on_social_network": " {{ store_name }} в {{ social_network }} ",
-      "newsletter_title": "Новости",
+      "store_on_social_network": " {{ store_name }} На {{ social_network }} ",
+      "newsletter_title": "Бюллетень",
       "newsletter_sign_up": "Регистрация",
       "newsletter_email_placeholder": "Адрес электронной почты",
       "footer": "Нижний колонтитул",
-      "quick_links_list": "Список быстрых ссылок",
-      "footer_content_text": "Какой-то текст для футтера"
+      "quick_links_list": "Список ссылок на быстрые ссылки",
+      "footer_content_text": "Некоторые колонтитулом содержание текста"
     },
     "maintenance": {
       "store_closed": "Магазин закрыт прямо сейчас",
@@ -692,19 +692,19 @@
   },
   "products": {
     "general": {
-      "share_on_facebook": "Поделиться",
-      "share_on_twitter": "Твитнуть",
-      "share_on_pinterest": "Прикрепить",
+      "share_on_facebook": "Предоставить общий доступ",
+      "share_on_twitter": "Чирикать",
+      "share_on_pinterest": "Прикрепите его",
       "share_on_fancy": "Фантазии",
       "related_products": "Мы также рекомендуем",
       "save_html": "Сохранить {{ saved_amount }} ",
       "add_to_cart": "Добавить в корзину",
-      "add_to_quote": "Добавить в квоту"
+      "add_to_quote": "Добавить в кавычки"
     },
     "product": {
-      "sold_out": "Продано",
-      "unavailable": "Недоступно",
-      "only_left": "Только {{ count }} осталось!",
+      "sold_out": "Продан",
+      "unavailable": "Недоступен",
+      "only_left": "Только   {{ count }}   налево!",
       "quantity": "Количество",
       "add_to_cart": "Добавить в корзину",
       "details_tab": "Детали продукта",
@@ -718,14 +718,14 @@
       "close_dialog": "Закрыть",
       "added_to_list_dialog_header": "Продукт добавляется в список сравнения",
       "removed_from_list_dialog_header": "Продукт удаляется из списка сравнения",
-      "go_to_compare_list": "Перейти к списоку сравнения",
+      "go_to_compare_list": "Перейти к сравнить список",
       "continue_shopping": "Продолжить покупки",
-      "capacity_exceeded_header": "Вы можете сравнивать до {{ capacity }} элементов за раз.",
+      "capacity_exceeded_header": "Вы можете сравнивать до   {{ capacity }}   элементов в то время.",
       "capacity_exceeded_message": "Вы хотели бы сравнить первые четыре пункта, которые вы выбрали?",
-      "compare_list_empty_header": "Ваш список продуктов для сравнения в настоящее время пуст",
-      "compare_list_empty_body": "Продолжить просмотр <a href=\"{{ url }}\">здесь</a>.",
+      "compare_list_empty_header": "Ваш продукт сравнить список в настоящее время пуст",
+      "compare_list_empty_body": "Продолжить просмотр <a href=\"<span class=\" notranslate\"=\"\">{{URL}} \"> здесь</a>.",
       "show_only_differences": "Отображать только отличия",
-      "clear_compare_list": "Очистить список сравнения продуктов",
+      "clear_compare_list": "Clear список сравнения продукта",
       "remove": "Удалить",
       "price": "Цена"
     },
@@ -735,37 +735,37 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Вот ваша {{ value }} подарочная карта для {{ shop }}!",
-      "subtext": "Вот ваша подарочная карта!",
+      "title": "Вот Ваша   {{ value }}   Подарочная карта для   {{ shop }}  !",
+      "subtext": "Вот Ваша подарочная карточка!",
       "disabled": "Отключен",
-      "expired": "Истек срок действия на {{ expiry }}",
-      "active": "Истекает {{ expiry }}",
+      "expired": "Истек срок действия на {{ expiry }} ",
+      "active": "Истекает {{ expiry }} ",
       "redeem": "Используйте этот код при оформлении заказа, чтобы выкупить вашу подарочную карту",
       "shop_link": "Начать покупки",
-      "left": "Осталось"
+      "left": "Левой"
     }
   },
   "popup": {
     "error": {
       "title": "Ошибка",
-      "ok": "Ok"
+      "ok": "Хорошо"
     },
     "guest": {
       "title": "Войдите в свой аккаунт",
-      "check_out_faster": "Вы сможете оформить заказ быстрее",
+      "check_out_faster": "Вы сможете проверить быстрее",
       "email": "Адрес электронной почты",
       "password": "Пароль",
       "forgot_password": "Забыли пароль?",
       "sign_in": "Войти",
-      "without_sign_in": "Продолжить без входа",
-      "register_after_purchase": "Вы будете иметь возможность зарегистрироваться после покупки.",
-      "register_now": "Зарегистрироваться сейчас",
+      "without_sign_in": "Продолжить без подписания в",
+      "register_after_purchase": "Вы будете иметь возможность зарегистрироваться для учетной записи после покупки.",
+      "register_now": "зарегистрироваться на счет в настоящее время",
       "continue_as_guest": "Продолжить в качестве гостя"
     }
   },
   "confirmation": {
     "confirm_email": "Благодарим вас за подтверждение вашей электронной почты",
-    "click_login_link": "Нажмите <a href=\"{{  }}\">здесь</a>, чтобы войти",
+    "click_login_link": "Нажмите <a href=\"<span class=\" notranslate\"=\"\">{{}} \"> здесь</a> , чтобы войти",
     "password_recovery": "Восстановление пароля",
     "check_email_to_reset_pass": "Пожалуйста, проверьте вашу электронную почту, чтобы сбросить пароль.",
     "confirm_email_sent": "Конвирмация электронная почта Отправлено",
@@ -775,7 +775,7 @@
   },
   "verify": {
     "code": {
-      "title": "Введите код подтверждения",
+      "title": "Введите код проверки",
       "send_code": "Отправить код подтверждения",
       "two_factor_auth": "Выберите поставщика двухфакторной аутентификации:",
       "submit": "Отправить",
